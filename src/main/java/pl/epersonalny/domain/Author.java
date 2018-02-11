@@ -1,4 +1,4 @@
-package pl.epersonalny.pl.epersonalny.domain;
+package pl.epersonalny.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

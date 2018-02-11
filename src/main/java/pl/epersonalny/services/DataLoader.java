@@ -1,11 +1,11 @@
-package pl.epersonalny.pl.epersonalny.services;
+package pl.epersonalny.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.epersonalny.pl.epersonalny.domain.Author;
-import pl.epersonalny.pl.epersonalny.domain.Post;
-import pl.epersonalny.pl.epersonalny.repository.AuthorRepository;
-import pl.epersonalny.pl.epersonalny.repository.PostRepository;
+import pl.epersonalny.domain.Author;
+import pl.epersonalny.domain.Post;
+import pl.epersonalny.repository.AuthorRepository;
+import pl.epersonalny.repository.PostRepository;
 
 import javax.annotation.PostConstruct;
 import java.util.Date;

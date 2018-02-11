@@ -1,4 +1,6 @@
-package pl.epersonalny.pl.epersonalny.domain;
+package pl.epersonalny.domain;
+
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -9,17 +11,23 @@ public class Post {
     @Id
     @GeneratedValue
     private Long id;
-
     private String title;
 
     @Column(columnDefinition = "TEXT")
     private String body;
 
+    @Column(columnDefinition = "TEXT")
+    private String teaser;
+
+    private String slug;
+
+    @CreatedDate @Column( columnDefinition = "TIMESTAMP")
     private Date postedOn;
 
     @ManyToOne
     private Author author;
 
+    @SuppressWarnings()
     private Post() {
 
     }
